@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static layout2</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  background-image: url(footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(206, 138, 50);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: burlywood;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+.section2 img{
+    height: 300px;
+    width: 150px;
+    float: left;
+    margin: 3px 0px 0px 3px;
+}
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+.box1 img{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+/* Style the footer */
+.footer {
+  padding-top:0px;
+  padding-bottom: 200px;
+  background-color: rgb(243, 186, 112);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(20, 20, 20);
+}
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" style="float: left; height: 100px; width: 100px;">
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #f1f1f1; font-size: 40px;">History And Library</h1>
+        <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #f1f1f1; font-size: 30px;">History is a race between education and catastrophe.</p>
+      </div>
+      
+      <div class="topnav">
+        <a href="#">Home </a>
+        <a href="#">Books</a>
+        <a href="#">Journalis</a>
+        <a href="#">Service </a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <div class="row">
+        <div class="column side">
+            <div class="section1">
+          <h2>About Our Library</h2>
+          <img src="book2.jpg " style="float: left; height: 200px; width: 200px;">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias sapiente odit culpa pariatur
+               libero qui magnam nesciunt, temporibus nihil veniam accusantium in distinctio ipsum assumenda vitae est? Eveniet, ducimus!
+            usandae praesentium animi id? Consequuntur quae perferendis nesciunt.</p>
+          </div>
+          <div class="section2">
+            <h2>History Books</h2>
+            <img src="book1.jpg">
+            <img src="book3.jpg">
+            <img src="book4.jpg">
+            <img src="book5.jpg" ><br>
+
+             <p style="text-decoration: underline; color:rgb(83, 83, 226);">Veiw more...</p>
+          </div>
+        </div>
+        
+        <div class="column middle">
+            <div class="box1">
+          <h2>Ancient Arts</h2>
+            <img src="art1.jpeg">
+            <img src="art2.jpg">
+            <img src="art3.jpg">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+           </div>
+           <div class="box2" style="float: left;">
+              <div class="box3"  style="height:300px; width:300px; float: left;">
+                <h2>Artical1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum dignissimos nulla assumenda? Eaque, ratione sequi vitae possimus tenetur laborum excepturi? 
+                    Asperiores tenetur veniam fuga reiciendis omnis inventore vel odit debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et enim assumenda unde 
+                    voluptates velit repudiandae perferendis vel reprehenderit doloribus, debitis quod minus voluptatum dolores exercitationem veritatis. Illum quod ipsam dolorum.</p>
+              </div>
+              <div class="box4"  style="height:300px; width:300px; float: left;">
+                <h2>Artical2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nulla reiciendis nemo suscipit cupiditate, labore ratione unde doloremque ducimus quod assumenda?
+                     Temporibus commodi sunt fuga ipsam exercitationem debitis quasi aperiam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima numquam temporibus labore qui dolore.
+                      Perferendis eligendi illo rem, sapiente et aliquam, dolores atque eveniet voluptates rerum, vitae officiis quisquam quaerat.</p>
+              </div>
+             </div>
+            <div class="box5">
+                <h2>Journalis</h2>
+                <img src="jour.jpg" style="height: 200px; width: 200px; float: left; border-radius: 5px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Cum facilis officiis natus quae ratione accusantium consectetur error earum sequi?
+                      Aliquam nesciunt placeat ex beatae ab rerum iure accusamus quidem ipsum! 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa veniam autem eligendi dolor possimus iure quaerat repudiandae! Consectetur odio, dolore facere,
+                     delectus voluptates facilis magnam inventore fugit alias mollitia adipisci.</p>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam rem earum neque esse, deserunt voluptate, tenetur necessitatibus quisquam exercitationem, 
+                         dignissimos et nulla porro maiores quos animi perferendis eum excepturi libero.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo ut dolor aspernatur iusto officiis corporis temporibus reiciendis veniam! 
+                        Ipsum sapiente possimus magnam itaque, voluptate obcaecati. Distinctio dolores velit possimus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero error consequuntur, odit architecto animi .</p>
+            </div>
+        </div>
+        <div class="column side">
+          <h2>Popular News</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+          <div class="box6" style="border: 1px solid black; padding: 5px; border-radius: 5px;">
+            <h3>News1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil vero et quidem ducimus sit molestiae dolores laboriosam.
+                 Modi assumenda laudantium voluptatem accusantium autem minima exercitationem eos id deserunt ipsa!
+                ima maxime in possimus necessitatibus eligendi suscipit sunt deleniti, dicta saepe esse blanditiis repellat doloribus!</p>
+          </div><br>
+          <div class="box7" style="border: 1px solid black; padding: 5px; border-radius: 5px;">
+            <h3>News2</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi necessitatibus, quos alias placeat consequatur repellendus fugit expedita illum tempora quisquam omnis.
+                 Commodi nemo cum suscipit, veniam sint officia tempore provident.
+                  at similique iusto explicabo sit a.
+            </p>
+        </div><br>
+        <div class="box8"style="border: 1px solid black; padding: 5px; border-radius: 5px;" >
+            <h3>News3</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Accusamus quibusdam id maiores veniam! Et voluptatum ad consequatur fuga porro modi blanditiis quidem deleniti, esse nisi amet itaque provident, perspiciatis ducimus.
+        </div><br>
+        <div class="box9" style="border: 1px solid black; padding: 5px; border-radius: 5px;">
+            <h3>News4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae corporis, fuga enim quo tempore tenetur, nesciunt rem, accusantium cupiditate sit sequi laudantium. 
+                Iste ipsa maxime dolorum minus itaque quo perferendis.</p>
+        </div>
+       </div>
+      </div>
+
+      <div class="footer">
+        <h2 style="text-align: center;">About Us</h2>
+        <div class="one" style=" width: 300px; float: left; margin-left: 100px;">
+          <h3>Fusce vel magna elit</h3>
+          <p>Lorem ipsum dolor sit ame modi beatae  exercitationem laboriosam natus sapiente repudiandae,
+               velit sequi ullam eius perspiciatis perferendis.</p>
+        </div>
+        <div class="two" style=" width: 300px; float: left; margin-left: 100px; ">
+          <h3>Aliquem dietum elefiend</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.  voluptates atque quo sequi ratione aliquam voluptate dolorem nisi qui.</p>
+        </div>
+        <div class="three" style="width: 300px; float: left; margin-left: 100px;">
+           <h3>Palientesque vel lacus</h3>
+           <p> magnam placeat, explicabo rerum inventore repellat molestiae libero officia rem mollitia harum! Omnis, quibusdam? Corrupti cumque error labore.</p>
+        </div>
+      </div>
+</body>
+</html>
